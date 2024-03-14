@@ -1,2 +1,19 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using modul4_1302223118;
+using static modul4_1302223118.KodeBuah;
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Nomor C : \n");
+        KodeBuah kodePos = new KodeBuah();
+        Console.WriteLine("Kode buah Apel\t\t: " +
+        kodePos.GetKodeBuah(NamaBuah.Apel));
+        Console.WriteLine("Kode buah Pisang\t: " +
+        kodePos.GetKodeBuah(NamaBuah.Pisang));
+        Console.WriteLine("Kode buah Paprika\t: " +
+        kodePos.GetKodeBuah(NamaBuah.Paprika));
+    }
+}
+
+
