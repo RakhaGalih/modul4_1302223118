@@ -13,6 +13,11 @@ internal class Program
         kodePos.GetKodeBuah(NamaBuah.Pisang));
         Console.WriteLine("Kode buah Paprika\t: " +
         kodePos.GetKodeBuah(NamaBuah.Paprika));
+
+        Console.WriteLine("\n\n\nNomor 5 A-E : \n");
+        PosisiKarakterGame door = new PosisiKarakterGame();
+        door.DoAction(Action.TombolW);
+        door.DoAction(Action.TombolX);
     }
 }
 

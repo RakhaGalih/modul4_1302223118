@@ -11,7 +11,7 @@ namespace modul4_1302223118
     {
         public enum NamaBuah
         {
-            Apel, Aprikot, Alpukat, Pisang, Paprika, Blackberry, Ceri, Kelapa, Jagung
+            Apel, Aprikot, Alpukat, Pisang, Paprika, Blackberry, Ceri, Kelapa, Jagung, Kurma, Durian, Anggur, Melon, Semangka
         }
 
         public string GetKodeBuah(NamaBuah namaBuah)
@@ -27,6 +27,11 @@ namespace modul4_1302223118
                 "H00", //Ceri
                 "I00", //kelapa
                 "J00", //jagung
+                "K00", //Kurma
+                "L00", //Durian
+                "M00", //Anggur
+                "N00", //Melon
+                "O00"  //Semangka
             };
             int index = (int)namaBuah;
             if (index >= 0 && index < kodeBuah.Length)
