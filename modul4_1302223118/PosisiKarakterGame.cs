@@ -42,15 +42,15 @@ namespace modul4_1302223118
         public void DoAction(Action action)
         {
             KarakterState previousState = currentState;
-            currentState = GetNextState(currentState, action);
-            if (previousState == KarakterState.Terbang && currentState == KarakterState.Jongkok)
+            this.currentState = GetNextState(currentState, action);
+            if (previousState == KarakterState.Berdiri || currentState == KarakterState.Terbang)
+            {
+                Console.WriteLine("Posisi take off");
+            } else 
+            if (previousState == KarakterState.Terbang || currentState == KarakterState.Jongkok)
             {
                 Console.WriteLine("Posisi landing");
             }
-            else if (previousState == KarakterState.Berdiri && currentState == KarakterState.Terbang)
-            {
-            }
-            Console.WriteLine("Posisi take off");
         }
     }
     } 
@@ -78,4 +78,3 @@ namespace modul4_1302223118
             this.action = action;
         }
     }
-}
